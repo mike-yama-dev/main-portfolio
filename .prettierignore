@@ -1,0 +1,9 @@
+resources/js/components/ui/*
+resources/js/ziggy.js
+resources/views/mail/*
+/vendor
+/node_modules
+/public/build
+.env
+.DS_Store
+/storage/*.key
