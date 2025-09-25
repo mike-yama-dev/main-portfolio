@@ -21,6 +21,9 @@ export default function About({ about }: { about: { title: string, description: 
         <p className="mt-4">
               {about.description}
         </p>
+
+        <img src="/headshot.jpg" alt="Italian Trulli" className="w-56 h-56" style={{ borderRadius: '100%', margin: '0 auto' }} />
+
       </div>
     </div>
         </>
