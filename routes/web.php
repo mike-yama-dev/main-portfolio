@@ -2,10 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Pages\AboutController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
 })->name('home');
+Route::get('/about', [AboutController::class, 'about'])->name('about');
+
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
